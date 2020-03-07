@@ -1,5 +1,15 @@
 package com.neuralnetwork.model;
 
-public class Organ {
+import java.util.Queue;
 
+public class Organ {
+		private String name;
+		private Queue<Transmitter> commChannel;
+
+		public Organ(String name, Queue<Transmitter> commChannel) {
+			this.name = name;
+			this.commChannel = commChannel;
+		}
+		
+		
 }
